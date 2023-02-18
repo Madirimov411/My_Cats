@@ -6,8 +6,9 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiService {
+    //https://thecatapi.com/thanks
 
-    @GET("search")
+    @GET("images/search")
     fun getCatsById(@Query("limit")limit:Int,@Query("breed_ids") breed_ids:String):Call<ArrayList<Cats>>
 
 
