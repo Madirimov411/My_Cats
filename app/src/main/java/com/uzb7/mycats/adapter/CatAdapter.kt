@@ -14,7 +14,6 @@ class CatAdapter(val list:ArrayList<Cats>):RecyclerView.Adapter<CatAdapter.CatVi
 
 
     fun submitList(newlist:ArrayList<Cats>){
-        list.clear()
         list.addAll(newlist)
         notifyDataSetChanged()
     }
